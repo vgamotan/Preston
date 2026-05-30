@@ -1,0 +1,6 @@
+{
+  "name": "Food-Grade Specialist",
+  "description": "Singapore's Specialist in Food-Grade Industrial Real Estate, providing SFA/NEA compliant advisory, portfolios, and market insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

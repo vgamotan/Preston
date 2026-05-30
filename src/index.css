@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@450;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  /* Geometric Balance Theme Overrides: Transforms Red/Orange schema into Pristine Indigo, Violet, and Slate */
+  --color-red-50: #edf2f9;        /* Extra soft slate-blue */
+  --color-red-100: #e0e7ff;       /* Indigo-100 */
+  --color-red-200: #c7d2fe;       /* Indigo-200 */
+  --color-red-500: #6366f1;       /* Indigo-550 */
+  --color-red-600: #4f46e5;       /* Deeper Indigo */
+  --color-red-650: #6366f1;       /* Main Brand Indigo */
+  --color-red-700: #4338ca;       /* Draping Deep Indigo */
+  --color-red-750: #3730a3;       /* Indigo-800 Dark */
+  --color-red-800: #1e1b4b;       /* Darkest Indigo-950 */
+  --color-red-900: #0f172a;       /* Slate-900 */
+  --color-red-55: #f1f5f9;        /* Soft Gray Match */
+
+  --color-orange-50: #f5f3ff;     /* Violet-50 */
+  --color-orange-100: #ede9fe;    /* Violet-100 */
+  --color-orange-200: #ddd6fe;    /* Violet-200 */
+  --color-orange-500: #818cf8;    /* Indigo-400 */
+  --color-orange-600: #6366f1;    /* Accent Indigo */
+  --color-orange-650: #4f46e5;    /* Deep Indigo */
+  --color-orange-850: #4338ca;    /* Dark Violet-Indigo */
+  --color-orange-900: #1c1917;
+
+  --color-slate-50: #f1f5f9;      /* Light slate background from mockup */
+  --color-slate-100: #e2e8f0;     /* Grid lines and boundaries */
+  --color-slate-905: #0f172a;     /* Premium dark sidebar/elements */
+  --color-slate-350: #cbd5e1;     /* Slate-300 borders */
+  --color-slate-750: #334155;     /* Slate-700 borders */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f1f5f9;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars for pristine visual experience */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@utility focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #c1121f;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
